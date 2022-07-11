@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Domains.Model
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Services.Domain", "services\Archaeopteryx.Services.Domain\Archaeopteryx.Services.Domain.csproj", "{C462624D-CA41-45A4-BC4D-20156E73C2E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Repository", "components\Archaeopteryx.Components.Repository\Archaeopteryx.Components.Repository.csproj", "{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Repository.ArangoDb", "components\Archaeopteryx.Components.Repository.ArangoDb\Archaeopteryx.Components.Repository.ArangoDb.csproj", "{D234C016-670E-4B6A-B553-2422F36882B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D234C016-670E-4B6A-B553-2422F36882B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D234C016-670E-4B6A-B553-2422F36882B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D234C016-670E-4B6A-B553-2422F36882B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D234C016-670E-4B6A-B553-2422F36882B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
