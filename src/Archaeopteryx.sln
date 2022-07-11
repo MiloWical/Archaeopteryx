@@ -1,14 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Domains.Models", "domains\Archaeopteryx.Domains.Models\Archaeopteryx.Domains.Models.csproj", "{EBC6E23B-F261-404C-ADF6-6FDE68DC4592}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Services.Domain", "services\Archaeopteryx.Services.Domain\Archaeopteryx.Services.Domain.csproj", "{C462624D-CA41-45A4-BC4D-20156E73C2E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Repository", "components\Archaeopteryx.Components.Repository\Archaeopteryx.Components.Repository.csproj", "{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC6E23B-F261-404C-ADF6-6FDE68DC4592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC6E23B-F261-404C-ADF6-6FDE68DC4592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC6E23B-F261-404C-ADF6-6FDE68DC4592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC6E23B-F261-404C-ADF6-6FDE68DC4592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C462624D-CA41-45A4-BC4D-20156E73C2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19FDB4F-BB0C-4184-9E52-C2CA9AA80BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24B86DC9-9A5E-4984-9E1B-81CAFE6D8FB6}
 	EndGlobalSection
 EndGlobal
