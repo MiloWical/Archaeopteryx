@@ -9,6 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Services.Doma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Repository.ArangoDb", "components\Archaeopteryx.Components.Repository.ArangoDb\Archaeopteryx.Components.Repository.ArangoDb.csproj", "{D234C016-670E-4B6A-B553-2422F36882B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Repository.Abstractions", "components\Archaeopteryx.Components.Repository.Abstractions\Archaeopteryx.Components.Repository.Abstractions.csproj", "{EB5D0B09-294A-4322-A89E-AEA324BDF5BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FDD87ACF-D344-42C2-B5D9-86D00B835B34}"
+	ProjectSection(SolutionItems) = preProject
+		..\Makefile = ..\Makefile
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Components.Startup", "components\Archaeopteryx.Components.Startup\Archaeopteryx.Components.Startup.csproj", "{2C6FC0BB-84B7-4106-8D10-312F9C18854A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archaeopteryx.Application", "Archaeopteryx.Application\Archaeopteryx.Application.csproj", "{AE1A4EEA-3D66-4A03-A7A7-D77AD0FD85B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +38,18 @@ Global
 		{D234C016-670E-4B6A-B553-2422F36882B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D234C016-670E-4B6A-B553-2422F36882B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D234C016-670E-4B6A-B553-2422F36882B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5D0B09-294A-4322-A89E-AEA324BDF5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5D0B09-294A-4322-A89E-AEA324BDF5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5D0B09-294A-4322-A89E-AEA324BDF5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5D0B09-294A-4322-A89E-AEA324BDF5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C6FC0BB-84B7-4106-8D10-312F9C18854A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C6FC0BB-84B7-4106-8D10-312F9C18854A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C6FC0BB-84B7-4106-8D10-312F9C18854A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C6FC0BB-84B7-4106-8D10-312F9C18854A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1A4EEA-3D66-4A03-A7A7-D77AD0FD85B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1A4EEA-3D66-4A03-A7A7-D77AD0FD85B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1A4EEA-3D66-4A03-A7A7-D77AD0FD85B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1A4EEA-3D66-4A03-A7A7-D77AD0FD85B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

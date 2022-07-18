@@ -10,4 +10,9 @@
     <PackageReference Include="ArangoDBNetStandard" Version="1.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\domains\Archaeopteryx.Domains.Models\Archaeopteryx.Domains.Models.csproj" />
+    <ProjectReference Include="..\Archaeopteryx.Components.Repository.Abstractions\Archaeopteryx.Components.Repository.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,6 @@
 ﻿namespace Archaeopteryx.Components.Repository.Abstractions;
-public class Class1
-{
 
+public interface IDbInitializer
+{
+		Task InitializeDbAsync();
 }
