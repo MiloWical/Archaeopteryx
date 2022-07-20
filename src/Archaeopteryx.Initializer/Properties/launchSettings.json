@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Archaeopteryx.Initializer": {
+      "commandName": "Project",
+      "commandLineArgs": "./data/entity_types.csv\r\n./data/property_types.csv\r\n./data/entities.csv"
+    }
+  }
+}

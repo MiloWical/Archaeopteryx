@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Archaeopteryx.Domains.Models": {
+      "commandName": "Project",
+      "commandLineArgs": "./data/types.csv\r\n./data/entities.csv",
+      "workingDirectory": "C:\\Users\\mwical1\\OneDrive - General Motors Financial Company, Inc\\Documents\\src\\Archaeopteryx"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Name,Type,Business Value,Health,Maturity
+
+# Modeling Domain
+Modeling,Domain,High,Under Development,Emerging
+Domain Model,Product,High,Under Development,Emerging
+Model Validation,Capability,Medium,,Nonexistent
+Domain Lookup,Capability,High,Under Development,Emerging
+Domain Service,Service,High,,Nonexistent
+ArandgoDbRepository,Component,High,Under Development,Emerging
+
+
+#Documents Domain
+Documents,Domain,High,Under Development,Emerging
+Diagrams,Domain,High,Under Development,Emerging

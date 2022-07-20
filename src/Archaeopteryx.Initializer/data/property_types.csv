@@ -1,0 +1,4 @@
+Type,Domain,Product,Capability,Service,Component
+Business Value,Low,Medium,High
+Health,Unknown,Under Development,Healthy - Baselining,Healthy - Operationalized,Unhealthy - MTBF,Unhealthy - MTTR,Unhealthy - CFR,Unhealthy - Faulted
+Maturity,Unknown,Nonexistent,Theoretical,Emerging,Realized,Evolving,Mature,Deprecated,Retired

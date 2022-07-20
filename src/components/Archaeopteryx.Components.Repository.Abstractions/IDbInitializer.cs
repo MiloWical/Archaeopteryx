@@ -3,4 +3,7 @@
 public interface IDbInitializer
 {
 		Task InitializeDbAsync();
+		Task InitializeCollectionAsync(string collectionName);
+		Task InitializePropertyAsync<TProperty>(TProperty property);
+		Task InitializeEntityAsync<TEntity>(string collectionName, TEntity entity);
 }
