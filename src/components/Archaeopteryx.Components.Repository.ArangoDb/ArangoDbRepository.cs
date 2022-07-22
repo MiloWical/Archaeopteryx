@@ -9,15 +9,13 @@ namespace Archaeopteryx.Components.Repository.ArangoDb;
 public class ArangoDbRepository : IDbInitializer
 {
 		private readonly JsonNetApiClientSerialization serializer;
-
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
-		private ArangoDBClient archaeopteryxDb;
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+		private ArangoDBClient? archaeopteryxDb;
 
 		public ArangoDbRepository()
 		{
 				serializer = new JsonNetApiClientSerialization();
 				serializer.DefaultOptions.UseCamelCasePropertyNames = true;
+				serializer.DefaultOptions.IgnoreNullValues = true;
 		}
 
 		public async Task InitializeDbAsync()
@@ -36,17 +34,22 @@ public class ArangoDbRepository : IDbInitializer
 				}
 
 				var archaeopteryxTransport = HttpApiTransport.UsingNoAuth(ArangoDbConstants.HostUri, ArangoDbConstants.DatabaseName);
-				archaeopteryxDb = new ArangoDBClient(archaeopteryxTransport);
+				archaeopteryxDb = new ArangoDBClient(archaeopteryxTransport, serializer);
 		}
 
 		public async Task InitializeCollectionAsync(string collectionName)
+		{
+				await InitializeCollectionAsync(collectionName, CollectionType.Document);
+		}
+
+		public async Task InitializeCollectionAsync(string collectionName, CollectionType collectionType)
 		{
 				var collections = await archaeopteryxDb.Collection.GetCollectionsAsync();
 				if (collections.Result.Any(c => c.Name == collectionName)) return;
 
 				await archaeopteryxDb.Collection.PostCollectionAsync(new PostCollectionBody
 				{
-						Type = CollectionType.Document,
+						Type = collectionType,
 						Name = collectionName
 				});
 		}
@@ -59,5 +62,16 @@ public class ArangoDbRepository : IDbInitializer
 		public async Task InitializeEntityAsync<TEntity>(string collectionName, TEntity entity)
 		{
 				await archaeopteryxDb.Document.PostDocumentAsync(collectionName, entity);
+		}
+
+		public async Task InitializeRelationAsync(string from, string type, string to)
+		{
+				await archaeopteryxDb.Document.PostDocumentAsync(ArangoDbConstants.RelationCollectionName,
+						new
+						{
+								_from = from,
+								type = type,
+								_to = to
+						});
 		}
 }

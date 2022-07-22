@@ -1,0 +1,10 @@
+Source Entity,Type,Target Entity
+# Types: (D->P) composed_of/composes; (P->Ca) realized_by/realizes; (Ca->S) implemented_by/implements; (S->Co) dependent_on/dependency
+Domain,composed_of,Product
+Product,composes,Domain
+Product,realized_by,Capability
+Capability,realizes,Product
+Capability,implemented_by,Service
+Service,implements,Capability
+Service,dependent_on,Component
+Component,dependency,Service

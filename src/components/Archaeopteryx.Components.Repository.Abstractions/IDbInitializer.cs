@@ -6,4 +6,5 @@ public interface IDbInitializer
 		Task InitializeCollectionAsync(string collectionName);
 		Task InitializePropertyAsync<TProperty>(TProperty property);
 		Task InitializeEntityAsync<TEntity>(string collectionName, TEntity entity);
+		Task InitializeRelationAsync(string from, string type, string to);
 }

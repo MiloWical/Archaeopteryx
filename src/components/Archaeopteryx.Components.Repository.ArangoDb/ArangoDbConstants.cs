@@ -1,6 +1,6 @@
 ﻿namespace Archaeopteryx.Components.Repository.ArangoDb;
 
-internal class ArangoDbConstants
+public class ArangoDbConstants
 {
 		public static readonly Uri HostUri = new("http://localhost:8529");
 		public const string DatabaseName = "Archaeopteryx";

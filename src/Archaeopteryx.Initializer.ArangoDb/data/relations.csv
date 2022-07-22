@@ -1,0 +1,16 @@
+﻿From,Type,To
+# Types: (D->P) composed_of/composes; (P->Ca) realized_by/realizes; (Ca->S) implemented_by/implements; (S->Co) dependent_on/dependency
+Modeling,composed_of,Domain Model
+Domain Model,composes,Modeling
+
+Domain Model,realized_by,Model Validation
+Model Validation,realizes,Domain Model
+
+Domain Model,realized_by,Domain Lookup
+Domain Lookup,realizes,Domain Model
+
+Domain Lookup,implemented_by,Domain Service
+Domain Service,implements,Domain Lookup
+
+Domain Service,dependent_on,ArangoDbRepository
+ArangoDbRepository,dependency,Domain Service

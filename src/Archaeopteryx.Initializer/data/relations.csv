@@ -1,4 +1,0 @@
-﻿From,Type,To
-# Types: (D->P) composed_of/composes; (P->Ca) realized_by/realizes; (Ca->S) implemented_by/implements; (S->Co) dependent_on/dependency
-Modeling,Domain Model
-Domain Model,Modeling

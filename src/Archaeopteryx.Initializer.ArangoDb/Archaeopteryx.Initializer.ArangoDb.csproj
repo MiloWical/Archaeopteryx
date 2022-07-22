@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\components\Archaeopteryx.Components.Extensions\Archaeopteryx.Components.Extensions.csproj" />
     <ProjectReference Include="..\components\Archaeopteryx.Components.Repository.Abstractions\Archaeopteryx.Components.Repository.Abstractions.csproj" />
     <ProjectReference Include="..\components\Archaeopteryx.Components.Repository.ArangoDb\Archaeopteryx.Components.Repository.ArangoDb.csproj" />
     <ProjectReference Include="..\components\Archaeopteryx.Components.Startup\Archaeopteryx.Components.Startup.csproj" />
@@ -41,7 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".vscode\Archaeopteryx.Initializer.code-workspace" />
+    <None Include=".vscode\Archaeopteryx.Initializer.ArangoDb.code-workspace" />
   </ItemGroup>
 
 </Project>
